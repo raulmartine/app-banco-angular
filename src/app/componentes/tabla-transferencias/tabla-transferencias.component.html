@@ -1,0 +1,19 @@
+<table>
+    <thead class="cabecera-tabla">
+        <tr>
+            <th>Concepto</th>
+            <th>Importe</th>
+            <th>Fecha</th>
+        </tr>        
+    </thead>
+    <tbody [routerLink]="'/pages/transferencias/'+transferencia.id"
+    class="fila-tabla cursor-pointer"
+    *ngFor="let transferencia of transferencias">
+        <tr *ngIf="transferencia">
+            <td>{{ transferencia.concepto }}</td>
+            <td>{{ transferencia.importe | currency : "EUR" }}</td>
+            <td>{{ transferencia.fecha | date : "shortDate" }}</td>
+        </tr>
+    </tbody>
+</table>
+<button routerLink="/pages/dashboard">Volver</button>

@@ -1,0 +1,41 @@
+<!-- un comentario -->
+<nav class="main-menu">
+  <ul>
+    <!-- [routerLinkActiveOptions]="{exact: true}" -->
+    <li>
+      <a routerLinkActive="active-menu" routerLink="/pages/dashboard">Inicio</a>
+    </li>
+    <li class="dropdown-menu">
+      Transferencias
+      <ul class="submenu">
+        <li>
+          <a routerLinkActive="active-menu" routerLink="/pages/transferencias-recibidas">
+            Transferencias recibidas
+          </a>
+        </li>
+        <li>
+          <a routerLinkActive="active-menu" routerLink="/pages/transferencias-enviadas">
+            Transferencias enviadas
+          </a>
+        </li>
+        <li>
+          <a routerLinkActive="active-menu" routerLink="/pages/nueva-transferencia">
+            Enviar una transferencia
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a routerLinkActive="active-menu" routerLink="/pages/perfil">
+        Perfil
+      </a>
+    </li>
+    <li><a routerLinkActive="active-menu" routerLink="/auth/login">Iniciar sesión</a></li>
+    <button class="btn"(click)="cerrarSesion()">
+      <a routerLink="/auth/login">Cerrar Sesion</a></button>
+  </ul>
+</nav>
+<!-- aquí se recarga el contenido al cambiar de ruta -->
+<router-outlet></router-outlet>
+<footer class="footer">
+</footer>

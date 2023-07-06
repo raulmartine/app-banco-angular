@@ -1,0 +1,6 @@
+<section>
+    <input *ngIf="ordenante" [(ngModel)] ="nuevaTransferencia.beneficiario.id" placeholder="Destinatario" type="texto">
+    <input *ngIf="ordenante" [(ngModel)] ="nuevaTransferencia.importe" placeholder="Importe" type="number">
+    <input *ngIf="ordenante" [(ngModel)] ="nuevaTransferencia.concepto" placeholder="Concepto" type="text">
+    <button *ngIf="ordenante" (click)="enviarTransferencia()" class="btn btn-primary">Enviar Transferencia</button>
+</section>

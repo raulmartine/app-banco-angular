@@ -1,0 +1,8 @@
+<h1>Perfil</h1>
+
+<p *ngIf="cliente"><b>Usuario:</b>  {{ cliente?.usuario }}</p>
+<p *ngIf="cliente"><b>Correo:</b>  {{ cliente?.correo }}</p>
+<p *ngIf="cliente"><b>Saldo:</b>  {{ cliente?.saldo }} €</p>
+<p *ngIf="cliente"><b>Gestor:</b>  {{ cliente?.gestor.usuario }}</p>
+<input *ngIf="cliente" [(ngModel)] = "cliente.password" type="password">
+<button *ngIf="cliente" (click)="guardarPassword()">Cambiar Contraseña</button>

@@ -1,0 +1,21 @@
+<table>
+    <thead class="cabecera-tabla">
+        <tr>
+            <th>Concepto</th>
+            <th>Importe</th>
+            <th>Fecha</th>
+            <th>Ordenante</th>
+            <th>Destinatario</th>
+        </tr>        
+    </thead>
+    <tbody >
+        <tr *ngIf="transferencia">
+            <td>{{ transferencia.concepto }}</td>
+            <td>{{ transferencia.importe | currency : "EUR" }}</td>
+            <td>{{ transferencia.fecha | date : "shortDate" }}</td>
+            <td>{{ transferencia.ordenante.usuario }}</td>
+            <td>{{ transferencia.beneficiario.usuario }}</td>
+        </tr>
+    </tbody>
+</table>
+<button routerLink="/pages/dashboard">Volver</button>

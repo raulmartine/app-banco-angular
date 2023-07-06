@@ -1,0 +1,31 @@
+.main-menu ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.main-menu ul li a{
+    text-decoration: none;
+}
+
+.active-menu {
+    background-color: rgba(36, 231, 221, 0.402);
+    color: white;
+}
+
+.dropdown-menu {
+    position: relative;
+}
+
+.dropdown-menu .submenu {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-menu:hover .submenu {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 12px;
+}

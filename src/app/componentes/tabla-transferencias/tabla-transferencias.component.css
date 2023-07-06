@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cabecera-tabla {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+th,td{
+    border: black 2px solid;
+}
+
+button {
+    margin-top: 20px;
+}
