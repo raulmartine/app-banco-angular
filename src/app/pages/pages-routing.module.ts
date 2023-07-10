@@ -5,7 +5,7 @@ import { TransferenciasRecibidasComponent } from './transferencias-recibidas/tra
 import { TransferenciasEnviadasComponent } from './transferencias-enviadas/transferencias-enviadas.component';
 import { DetalleTransferenciaComponent } from './detalle-transferencia/detalle-transferencia.component';
 import { PerfilComponent } from './perfil/perfil.component';
-import { NuevaTransferenciaComponent } from '../nueva-transferencia/nueva-transferencia.component';
+import { NuevaTransferenciaComponent } from './nueva-transferencia/nueva-transferencia.component';
 
 const routes: Routes = [
   {
